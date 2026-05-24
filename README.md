@@ -7,7 +7,7 @@ Tento program analyzuje slovné siete v diele Franza Kafku *Premena (Die Verwand
 ```bash
 pip install -r requirements.txt
 ```
-- Jazykové modely pre 'spaCy' (inštalujú sa samostatne)
+- Jazykové modely pre 'spaCy'
 ```bash
 python -m spacy download en_core_web_trf de_dep_news_trf nl_core_news_lg es_dep_news_trf it_core_news_lg pt_core_news_lg
 ```
