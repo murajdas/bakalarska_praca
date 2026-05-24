@@ -1,1 +1,1 @@
-# bakal-rska-pr-ca---Slovn-siete
+# WordNetwork Analyzer of Kafka's Metamorphosis
