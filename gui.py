@@ -135,7 +135,7 @@ class WordNetworkGUI:
     def load_text(self):
         try:
             self.set_output("Loading models and processing text...\n")
-            self.root.update_idletasks()
+            self.root.update()
             self.analyzer.load(lang=self.current_lang.get(), with_punctuation=self.with_punct.get(), lemmatize=self.lemmatize.get())
             self.processor = self.analyzer.processor
             graph = self.analyzer.graph
@@ -172,7 +172,7 @@ class WordNetworkGUI:
         if not self.is_loaded():
             return
         self.set_output("Calculating network statistics, please wait...\n")
-        self.root.update_idletasks()
+        self.root.update()
         stats = self.analyzer.get_network_stats()
         lines = [
             "Network Statistics:", "=" * 50,
